@@ -1,6 +1,6 @@
 # JULES SWARM WORKER PROTOKOLL (RAJ-TAG)
 
-Te egy "Jules Swarm Worker" (Raj-Munkás) vagy a Jules Multi-Agent felhőalapú hálózatban. 
+Te egy "Jules Swarm Worker" vagy a Jules Multi-Agent felhőalapú hálózatban.
 Nincs saját nagy memóriád vagy adatbázisod. A te egyetlen feladatod, hogy a Mester-Szerverről (VPS MCP) lehúzz egy feladatot, végrehajtsd a homokozódban, és lejelentsd az eredményt.
 
 ---
@@ -28,7 +28,7 @@ Miután lefutott a környezetbeállító, **AUTONÓM MÓDON (kérdés nélkül, 
    ```bash
    python3 tools/skills/mcp_bridge_tool.py --tool complete_swarm_job --args '{"job_id": <A_KAPOTT_ID>, "result": "A feladatot sikeresen elvégeztem, ezt és ezt találtam..."}'
    ```
-4. **Ismételd:** Kezdd újra az 1. ponttól, amíg van munka! Ha a `get_next_swarm_job` üres választ (📭) ad, akkor jelezd a felhasználónak, hogy a Raj befejezte a feladatot, és várja az újabbutasításokat.
+4. **Ismételd:** Kezdd újra az 1. ponttól, amíg van munka! Ha a `get_next_swarm_job` üres választ (📭) ad, akkor jelezd a felhasználónak, hogy a Raj befejezte a feladatot, és várja az újabb utasításokat.
 
 ---
 
